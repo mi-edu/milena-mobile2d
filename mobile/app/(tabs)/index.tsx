@@ -108,8 +108,8 @@ export default function HomeScreen() {
 
         <Collapsible title="𝐄𝐦𝐩𝐫𝐞́𝐬𝐭𝐢𝐦𝐨">
   <ThemedText>
-    Janaina, o seu imprestimo pode ser de até R$- 150.000.00, nossos juros são para ajudar 
-    o cliente, então é apeas 2% ao mes (aplicano issi na sua situação fica R$- 3.000.00 ao mes)
+    Janaina, o seu impréstimo pode ser de até R$- 150.000.00, nossos juros são para ajudar 
+    o cliente, então é apenas 2% ao mes (aplicano isso na sua situação fica R$- 3.000.00 ao mes)
   </ThemedText>
   <ExternalLink href=" ">
     <ThemedText type="link">Fᥲzᥱr E꧑ρrᥱ́᥉tι꧑᥆</ThemedText>
@@ -120,7 +120,7 @@ export default function HomeScreen() {
   <ThemedText>
     Na caixinha você pode guardar seu dinheiro com muita segurança, pode programa-la para liberar 
     seu dinheiro até 1 ano depois que você guardou, você pode alterar as configurações e deixar 
-    para que resgate o dinheiro quando quiser. O objetivo da caixinha é vocêguardar o dinheiropara 
+    para que resgate o dinheiro quando quiser. O objetivo da caixinha é você guardar o dinheiro para 
     uma viagem por exemplo, e então, o que acha da ideia?
   </ThemedText>
   <ExternalLink href=" ">
