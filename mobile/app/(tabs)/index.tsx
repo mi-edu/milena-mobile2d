@@ -4,6 +4,9 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { Collapsible } from '@/components/Collapsible';
+import { ExternalLink } from '@/components/ExternalLink';
+
 
 export default function HomeScreen() {
   return (
@@ -18,7 +21,7 @@ export default function HomeScreen() {
     }
   >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Olá, kkk</ThemedText>
+        <ThemedText type="title">Olá, Janaina</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedText type="defaultSemiBold">Conta corrente **** 8454</ThemedText>{' '}
@@ -48,7 +51,7 @@ export default function HomeScreen() {
       border: '2px solid white'
     }}
   >
-    Pix
+    𝗣𝗶𝘅
   </button>
 
   <button 
@@ -62,7 +65,7 @@ export default function HomeScreen() {
       border: '2px solid white'
     }}
   >
-    Extrato
+     𝗘𝘅𝘁𝗿𝗮𝘁𝗼
   </button>
 
   <button 
@@ -76,7 +79,7 @@ export default function HomeScreen() {
       border: '2px solid white'
     }}
   >
-    Cartões
+     𝗖𝗮𝗿𝘁𝗼̃𝗲𝘀
   </button>
 
   <button 
@@ -99,12 +102,43 @@ export default function HomeScreen() {
         <ThemedText>R$- 90.546.45</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Você pode:</ThemedText>
+
+        <ThemedText type="subtitle">𝐕𝐨𝐜𝐞̂ 𝐩𝐨𝐝𝐞</ThemedText>
         <ThemedText>{' '}
-        <ThemedText type="defaultSemiBold">Fazer um emprestimo de 150,000.00</ThemedText>{' '}
-          <ThemedText type="defaultSemiBold">com juros de 2% (que fica de 3.000.00 ao mes)</ThemedText>{' '}
-        </ThemedText>
-        <ThemedText type="defaultSemiBold">Caixinha para depositar (pode resgatar o dinheiro a hora que quiser)</ThemedText>{' '}
+
+        <Collapsible title="𝐄𝐦𝐩𝐫𝐞́𝐬𝐭𝐢𝐦𝐨">
+  <ThemedText>
+    Janaina, o seu imprestimo pode ser de até R$- 150.000.00, nossos juros são para ajudar 
+    o cliente, então é apeas 2% ao mes (aplicano issi na sua situação fica R$- 3.000.00 ao mes)
+  </ThemedText>
+  <ExternalLink href=" ">
+    <ThemedText type="link">Fᥲzᥱr E꧑ρrᥱ́᥉tι꧑᥆</ThemedText>
+  </ExternalLink>
+</Collapsible>
+
+<Collapsible title="𝐂𝐚𝐢𝐱𝐢𝐧𝐡𝐚">
+  <ThemedText>
+    Na caixinha você pode guardar seu dinheiro com muita segurança, pode programa-la para liberar 
+    seu dinheiro até 1 ano depois que você guardou, você pode alterar as configurações e deixar 
+    para que resgate o dinheiro quando quiser. O objetivo da caixinha é vocêguardar o dinheiropara 
+    uma viagem por exemplo, e então, o que acha da ideia?
+  </ThemedText>
+  <ExternalLink href=" ">
+    <ThemedText type="link">Ir ρᥲrᥲ ᥴᥲι᥊ιᥒhᥲ</ThemedText>
+  </ExternalLink>
+</Collapsible>
+
+<Collapsible title="𝐈𝐧𝐯𝐞𝐬𝐭𝐢𝐦𝐞𝐧𝐭𝐨𝐬">
+  <ThemedText>
+  Investir oferece benefícios como o crescimento do patrimônio, proteção contra a inflação e geração de
+   rendimentos passivos. Além disso, permite diversificar fontes de renda e alcançar metas financeiras de 
+   longo prazo, como aposentadoria ou compra de bens.
+  </ThemedText>
+  <ExternalLink href=" ">
+    <ThemedText type="link">Iᥒ᥎ᥱ᥉tιr</ThemedText>
+  </ExternalLink>
+</Collapsible>
+ </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );

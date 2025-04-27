@@ -8,88 +8,62 @@ import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
 export default function TabTwoScreen() {
-  return (
-    <ParallaxScrollView
+  return ( 
+<ParallaxScrollView
         headerBackgroundColor={{ light: '#000', dark: '#000' }} // fundo preto
         headerImage={
           <Image
             source={require('@/assets/images/magnus.png')}
-            style={styles.reactLogo}
+            style={styles.headerImage}
             resizeMode="cover" // faz a imagem cobrir a área toda
           />
         }
       >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Pix</ThemedText>
+        <ThemedText type="title">𝐀́𝐫𝐞𝐚 𝐏𝐢𝐱</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+      <ThemedText>Envie e receba pagamentos a qualquer hora e dia da semana, sem pagar nada por isso.</ThemedText>
+
+      <Collapsible title="𝚃𝚛𝚊𝚗𝚏𝚎𝚛𝚒𝚛">
+        <ThemedText>{' '}
+          <ThemedText type="defaultSemiBold"></ThemedText>Você pode Enviar dinheiro para alguém, basta ter a chave pix dela (pode ser CPF/CNPJ ou o nome dela){' '}
         </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
+        <ExternalLink href="   ">
+          <ThemedText type="link">𝚃𝚛𝚊𝚗𝚏𝚎𝚛𝚒𝚛</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+
+      <Collapsible title="𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚛">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
+        O pix programado, é algo para facilitar um pix que você faz com muita frequencia{' '}
+        <ThemedText></ThemedText> {''}
+          <ThemedText type="defaultSemiBold">Beneficios</ThemedText> Ganha tempo (você define quem recebe, a frequência e a gente faz sempre no dia certinho)
+          Controle do dinheiro (você pode cancelar Pix programado quando quiser no seu Assistente de pagamento)</ThemedText>
+          <ExternalLink href="asdfghj">
+          <ThemedText type="link">𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚛</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Custom fonts">
+
+      <Collapsible title="𝙻𝚎𝚛 𝚀𝚛 𝚌𝚘𝚍𝚎">
+        <ThemedText> Você pode add um Qr code que é um CNPJ/CPF que ele ira automatocamente abrir uma aba para que você tranfira 
+          o dinheiro para a outra <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+          <ThemedText type="defaultSemiBold"></ThemedText>
+        </ThemedText>
+        <ExternalLink href="fghjk">
+          <ThemedText type="link">𝙻𝚎𝚛 𝚀𝚛 𝚌𝚘𝚍𝚎</ThemedText>
+        </ExternalLink>
+      </Collapsible>
+
+      <Collapsible title="𝙲𝚘𝚋𝚛𝚊𝚛">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
+        <ThemedText type="defaultSemiBold"></ThemedText> {' '} Você pode deixar agendado uma cobrança para uma pessoa, apenas coloque o dia e a hora 
+        que a cobrança ira chegar para ela, logo ela vai tranferir o dinheiro a você e logo vamos te avisar que 
+        seu dinheiro foi tranferido<ThemedText style={{ fontFamily: 'SpaceMono' }}>
           </ThemedText>
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
+        <ExternalLink href="guihj">
+          <ThemedText type="link">𝙲𝚘𝚋𝚛𝚊𝚛</ThemedText>
         </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
       </Collapsible>
     </ParallaxScrollView>
   );
